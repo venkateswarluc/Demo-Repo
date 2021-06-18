@@ -55,13 +55,4 @@ jobs:
             python AddNum.py
   
   
-  code-coverage:          
-       runs-on: ubuntu-latest
-       
-       steps:       
-        - name: AddNum.py badge  
-        
-          uses: tj-actions/coverage-badge-py@v1.6
-          with:     
-             output: coverage.svg
-             overwrite: true     
+ 
