@@ -62,5 +62,5 @@ jobs:
     # Github token
             github-token: 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
     # The location of the lcov.info file
-            lcov-file: calc.py
+            lcov-file: actions/checkout@v2
  
