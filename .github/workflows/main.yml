@@ -53,3 +53,15 @@ jobs:
           run: |
             python calc.py
             python AddNum.py
+  
+  
+  code-coverag:          
+       runs-on: ubuntu-latest
+       
+       steps:       
+        - name: coverage.py badge  
+        
+          uses: tj-actions/coverage-badge-py@v1.6
+          with:     
+             output: coverage.svg
+             overwrite: true     
