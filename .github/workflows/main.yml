@@ -27,7 +27,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build
-        run: python calc.py
+        run: | 
+           python calc.py
+           python AddNum.py
         
 
   testing:
@@ -37,8 +39,9 @@ jobs:
         - uses: actions/checkout@v2
         
         - name: unit tests
-          run: python test_calc.py
-          
+          run: |
+            python test_calc.py
+            python test_AddNum.py         
           
   deploy:
       runs-on: ubuntu-latest
@@ -47,4 +50,6 @@ jobs:
         - uses: actions/checkout@v2
         
         - name: deploy
-          run: python calc.py        
+          run: |
+            python calc.py
+            python AddNum.py
