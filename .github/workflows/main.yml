@@ -59,9 +59,9 @@ jobs:
        runs-on: ubuntu-latest
        
        steps:       
-        - name: coverage.py badge  
+        - name: AddNum.py badge  
         
           uses: tj-actions/coverage-badge-py@v1.6
-         # with:     
-          #   output: coverage.svg
-           #  overwrite: true     
+          with:     
+             output: coverage.svg
+             overwrite: true     
