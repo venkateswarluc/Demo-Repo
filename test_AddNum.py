@@ -9,5 +9,5 @@ class TestAddNum(unittest.TestCase):
     
     
     
-if _name_ == '_main_':
-  unittest.main()
+if __name__ == '__main__':
+    unittest.main()
