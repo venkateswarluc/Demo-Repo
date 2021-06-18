@@ -54,7 +54,7 @@ jobs:
             python calc.py
             python AddNum.py
             
-  code-coverag:
+  code-coverage:
   
        runs-on: ubuntu-latest
        steps: 
