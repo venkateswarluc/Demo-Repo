@@ -32,7 +32,7 @@ jobs:
            python AddNum.py
         
 
-  testing:
+  test:
       runs-on: ubuntu-latest
       
       steps:
