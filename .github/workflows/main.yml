@@ -62,7 +62,6 @@ jobs:
          - uses: actions/checkout@v2
          - name: Code Coverage Report
            run: |
-             pytest calc.py AddNum.py
              coverage run -m pytest calc.py AddNum.py
              coverage report -m
              coverage html
