@@ -2,10 +2,12 @@ import unittest
 import AddNum
 
 
-class TestAddNum(unittest.TestCase):
-  
-  def test_add(self):
-    self.assertEqual(AddNum.sum(10,30))
+class TestCalc(unittest.TestCase):
+
+    def test_add(self):
+        self.assertEqual(AddNum.add(10, 5), 15)
+        self.assertEqual(AddNum.add(-1, 1), 0)
+        self.assertEqual(AddNum.add(-1, -1), -2)
     
     
     
