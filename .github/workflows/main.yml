@@ -85,20 +85,4 @@ jobs:
         pytest
         
 
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Update cabal package list
-      run: cabal update
-
-    - name: Build and test
-      run: pytest --enable-coverage
-
-    - name: Generate coverage report
-      uses: 8c6794b6/hpc-codecov-action@v2
-      with:
-          target: cabal:my-test-suite
-          excludes: Main,Paths_my_package
-
-    - name: Send coverage report
-      uses: codecov/codecov-action@v1
+    
