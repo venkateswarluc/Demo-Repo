@@ -92,7 +92,7 @@ jobs:
       run: cabal update
 
     - name: Build and test
-      run: cabal test --enable-coverage
+      run: pytest --enable-coverage
 
     - name: Generate coverage report
       uses: 8c6794b6/hpc-codecov-action@v2
