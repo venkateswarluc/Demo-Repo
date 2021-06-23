@@ -1,5 +1,5 @@
 x = 10
-y = 20
+y = 15
 
 # Add two numbers
 add = x + y
