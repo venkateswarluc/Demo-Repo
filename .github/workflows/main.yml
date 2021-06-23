@@ -85,7 +85,7 @@ jobs:
         pytest
         
 
-    - uses: actions/checkout@master
+    - uses: actions/checkout@main
     - uses: codecov/codecov-action@v1
       with:
         token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
