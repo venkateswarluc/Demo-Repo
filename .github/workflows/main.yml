@@ -84,12 +84,9 @@ jobs:
       run: |
         pytest
         
-    - name: Python Django Coverage GitHub Action
-  # You may pin to the exact commit or the version.
-  # uses: dc740/django-coveragepy-github-action@f8581a749bd8cf75838b120a6aa07dc40a060e61
-      uses: dc740/django-coveragepy-github-action@0.9
+    - uses: devmasx/coverage-check-action@v1.2.0
       with:
-    # Application
-        django-app: .
-    # Minimum allowed code coverage
-        minimum-coverage: 10
+        type: lcov
+        result_path: coverage/example.lcov
+        min_coverage: 90
+        token: ${{ github.token }}
