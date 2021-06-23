@@ -84,9 +84,12 @@ jobs:
       run: |
         pytest
         
-    - uses: devmasx/coverage-check-action@v1.2.0
+
+    - name: Checkout action
+      uses: actions/checkout@v2
+    - name: Django Coverage action
+      uses: actions/python-django-coverage-gitHub-action@0.9
       with:
-        type: lcov
-        result_path: coverage/example.lcov
-        min_coverage: 90
-        token: ${{ github.token }}
+        django-app: 'sample_app'
+        minimum-coverage: '86'
+
