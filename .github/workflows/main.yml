@@ -85,11 +85,13 @@ jobs:
         pytest
         
 
-    - name: Checkout action
-      uses: actions/checkout@v2
-    - name: Django Coverage action
-      uses: actions/checkout@v2
+    - uses: actions/checkout@master
+    - uses: codecov/codecov-action@v1
       with:
-        django-app: 'sample_app'
-        minimum-coverage: '86'
+        token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+        files: ./coverage1.xml,./coverage2.xml # optional
+        flags: unittests # optional
+        name: codecov-umbrella # optional
+        fail_ci_if_error: true # optional (default = false)
+        verbose: true # optional (default = false)
 
