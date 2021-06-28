@@ -6,6 +6,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(AddNum.add(10, 5), 15)
         self.assertEqual(AddNum.add(-1, 1), 0)
         self.assertEqual(AddNum.add(-1, -1), -2)
+        self.assertEqual(AddNum.add(0, 0), 0)
   
     
   
