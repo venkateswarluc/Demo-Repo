@@ -85,4 +85,5 @@ jobs:
         pytest
         pip install pytest-cov
         pip install pytest-xdist
-        pytest --cov=Demo-Repo python -m pytest [...]/
+        pip uninstall pytest-cov
+        pytest --cov=myproj tests/
