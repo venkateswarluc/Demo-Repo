@@ -84,5 +84,5 @@ jobs:
       run: |
         pytest
         pip install pytest-cov
-        pip install pytest-xdist
-        pytest --cov=myproj tests/
+        pip install .
+        py.test --cov mylib
