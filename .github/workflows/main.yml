@@ -85,5 +85,5 @@ jobs:
         pytest
         pip install pytest-cov
         pip freeze > requirements.txt
-        pip install -r requirements.txt --no-deps --target python/lib/python3.6/site-packages/
+        pip install -r requirements.txt --no-deps --target python/lib/python3.7/site-packages/
         py.test --cov Demo-Repo
