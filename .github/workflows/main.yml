@@ -84,3 +84,5 @@ jobs:
       run: |
         pytest
         pip install pytest-cov
+        pip install pytest-xdist
+        pytest --cov=Demo-Repo tests/
