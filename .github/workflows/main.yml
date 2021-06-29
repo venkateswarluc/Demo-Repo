@@ -84,5 +84,5 @@ jobs:
       run: |
         pytest
         pip install pytest-cov
-        pip install .
+        pip install -r requirements.txt --no-deps --target python/lib/python3.6/site-packages/
         py.test --cov mylib
