@@ -85,5 +85,4 @@ jobs:
         pytest
         pip install pytest-cov
         pip install pytest-xdist
-        pip uninstall pytest-cov -y
         pytest --cov=myproj tests/
