@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Test
         run: |
-          go mod init
+          go mod init actions/checkout@v2
           CVPKG=$(go list ./... | grep -v mocks | tr '\n' ',')
           go test -coverpkg=${CVPKG} -coverprofile=coverage.out -covermode=count  ./...
           
